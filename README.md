@@ -7,7 +7,7 @@
 
 ---
 
-Este projeto é um simulador minimalista e funcional de **Juros Compostos com Aportes Mensais**, construído em **React Native** utilizando o ambiente **Expo**. É uma ferramenta ideal para visualizar o crescimento exponencial de um investimento ao longo do tempo.
+Este projeto é um simulador completo de **Juros Compostos com Aportes Mensais**, construído em **React Native** (Expo). Foi refatorado para incluir **navegação entre telas** e **gerenciamento de estado global**, cumprindo requisitos de projetos profissionais.
 
 ## 🚀 Funcionalidades
 
@@ -17,17 +17,27 @@ Este projeto é um simulador minimalista e funcional de **Juros Compostos com Ap
     * **Valor Total Final** (Montante)
     * **Valor Investido Puro** (Soma do Capital Inicial e todos os Aportes)
     * **Total Ganho em Juros** (O lucro gerado pelo investimento)
-- ⚙️ **Interface Otimizada:** Design simples e responsivo, ideal para dispositivos móveis.
+- 🖥️ **Multi-Telas:** Separação da entrada de dados e da visualização detalhada do resultado.
+- 💾 **Persistência de Sessão:** O resultado do último cálculo é salvo e acessível em outra tela.
+
+---
+
+## 🗺️ Navegação e Telas
+
+O aplicativo possui duas telas principais:
+
+1.  **Simulação Principal:** Onde o usuário insere todos os parâmetros (Capital, Aporte, Taxa, Tempo) e inicia o cálculo.
+2.  **Resumo do Investimento (Histórico):** Tela dedicada a exibir os resultados detalhados e os parâmetros utilizados no **último cálculo** realizado, buscando os dados via **Context API**.
 
 ---
 
 ## 📱 Capturas de Tela
 
-*Substitua as URLs abaixo por links para as imagens reais do seu aplicativo.*
+*Substitua as URLs abaixo por links para as imagens reais das suas duas telas (Calculadora e Histórico).*
 
 <p align="center">
-    <img width="300" height="600" alt="Tela de Input da Calculadora" src="" />
-    <img width="300" height="600" alt="Tela de Resultados da Calculadora" src="" />
+    <img width="300" height="600" alt="Tela 1: Calculadora de Input" src="https://br.pinterest.com/anacraudiaaa/tela-inicial/" />
+    <img width="300" height="600" alt="Tela 2: Resumo/Histórico do Cálculo" src="https://www.youtube.com/watch?v=eaqDQWGPLpA" />
 </p>
 
 ---
@@ -37,7 +47,8 @@ Este projeto é um simulador minimalista e funcional de **Juros Compostos com Ap
 - **Linguagem:** **JavaScript**
 - **Framework:** **React Native**
 - **Ambiente de Desenvolvimento:** **Expo**
-- **Gerenciamento de Estado:** React Hooks (`useState`)
+- **Navegação:** **React Navigation (Native Stack)**
+- **Gerenciamento de Estado:** **React Context API** (para compartilhar o resultado entre telas)
 - **Fórmula Financeira:** Iteração Mês a Mês (Série Uniforme de Pagamentos)
 
 ---
@@ -51,6 +62,7 @@ Certifique-se de ter o **Node.js** e o **Expo CLI** (`npm install -g expo-cli`) 
     ```bash
     npm install
     ```
+    *Obs: Este projeto utiliza as bibliotecas nativas do React Navigation, que devem ser instaladas corretamente.*
 
 2.  **Inicie o Servidor:**
     ```bash
@@ -61,11 +73,11 @@ Certifique-se de ter o **Node.js** e o **Expo CLI** (`npm install -g expo-cli`) 
 
 ---
 
-## 💡 Melhorias Futuras
+## 💡 Próximos Passos e Melhorias
 
-- Adicionar uma **tabela de histórico** com a evolução do montante em cada mês.
-- Implementar **gráficos** para visualização do crescimento dos juros vs. capital.
-- Possibilidade de salvar e carregar diferentes simulações.
+- Implementar uma **tabela detalhada** com a evolução do montante mês a mês na tela de Histórico.
+- Adicionar **gráficos** para visualização do crescimento dos juros vs. capital.
+- Possibilidade de salvar o **histórico de múltiplos cálculos** (usando AsyncStorage).
 
 ---
 
