@@ -33,8 +33,6 @@ O aplicativo possui duas telas principais:
 
 ## 📱 Capturas de Tela
 
-*Substitua as URLs abaixo por links para as imagens reais das suas duas telas (Calculadora e Histórico).*
-
 <p align="center">
     <img width="300" height="600" alt="Tela 1: Calculadora de Input" src="" />
     <img width="300" height="600" alt="Tela 2: Resumo/Histórico do Cálculo" src="https://github.com/user-attachments/assets/36fc1d77-8346-4e77-aa68-ec224aaea9ea" />
