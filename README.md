@@ -36,11 +36,12 @@ O aplicativo possui duas telas principais:
 *Substitua as URLs abaixo por links para as imagens reais das suas duas telas (Calculadora e Histórico).*
 
 <p align="center">
-    <img width="300" height="600" alt="Tela 1: Calculadora de Input" src="https://br.pinterest.com/anacraudiaaa/tela-inicial/" />
-    <img width="300" height="600" alt="Tela 2: Resumo/Histórico do Cálculo" src="https://www.youtube.com/watch?v=eaqDQWGPLpA" />
+    <img width="300" height="600" alt="Tela 1: Calculadora de Input" src="" />
+    <img width="300" height="600" alt="Tela 2: Resumo/Histórico do Cálculo" src="https://github.com/user-attachments/assets/36fc1d77-8346-4e77-aa68-ec224aaea9ea" />
 </p>
 
 ---
+
 
 ## 🧱 Pilha de Tecnologia (Tech Stack)
 
